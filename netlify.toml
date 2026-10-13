@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/tts"
+  to = "/.netlify/functions/speak"
+  status = 200
+  force = true
